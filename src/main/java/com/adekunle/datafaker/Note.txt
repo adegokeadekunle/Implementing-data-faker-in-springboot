@@ -1,0 +1,5 @@
+
+                            DATA FAKER
+    Datafaker is a library for Java and Kotlin to generate fake data.
+    This can be very helpful when generating test data to fill a database,
+    to generate data for a stress test, or anonymize data from production services.
