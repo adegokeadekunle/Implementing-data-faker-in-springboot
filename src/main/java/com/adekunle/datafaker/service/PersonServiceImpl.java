@@ -10,18 +10,19 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class PersonServiceImpl {
+public class PersonServiceImpl implements PersonService {
 
     private final PersonRepository personRepository;
 
+    @Override
     public List<Person> getAllPeople(){
         return personRepository.findAll();
     }
 
+    @Override
     public Person findByFirstAndLastName(String firstName, String lastName){
 
-        Person person =  personRepository.findByFirstNameEqualsAndLastNameEquals(firstName, lastName);
-        return person;
+        return personRepository.findByFirstNameEqualsAndLastNameEquals(firstName, lastName);
 
     }
 }
