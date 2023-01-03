@@ -21,7 +21,7 @@ public class JavaFakerDataLoaderServiceImpl implements CommandLineRunner {
 
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
 
         List<Person> listOfPersons = IntStream.rangeClosed(1, 100)  // this will save list of 100 random persons
                 .mapToObj(p -> new Person(
