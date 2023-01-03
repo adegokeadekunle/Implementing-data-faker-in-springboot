@@ -1,7 +1,7 @@
 package com.adekunle.datafaker.controller;
 
 import com.adekunle.datafaker.entity.Person;
-import com.adekunle.datafaker.service.PersonService;
+import com.adekunle.datafaker.service.PersonServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PersonController {
 
-    private final PersonService personService;
+    private final PersonServiceImpl personService;
 
     @GetMapping("/all")
     public List<Person> getAll(){

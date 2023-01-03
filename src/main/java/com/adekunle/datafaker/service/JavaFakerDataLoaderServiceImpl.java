@@ -6,7 +6,6 @@ import com.adekunle.datafaker.repositories.PersonRepository;
 import com.github.javafaker.Faker;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,7 +14,7 @@ import java.util.stream.IntStream;
 
 @Service
 @RequiredArgsConstructor
-public class JavaFakerDataLoaderConfig implements CommandLineRunner {
+public class JavaFakerDataLoaderServiceImpl implements CommandLineRunner {
 
     private final PersonRepository personRepository;
     private final Faker javaFaker;
